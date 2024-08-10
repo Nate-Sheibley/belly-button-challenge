@@ -20,7 +20,7 @@ function buildMetadata(sample) {
       let line_string = `${key.toUpperCase()}: ${meta_data_object[key]}`;
       metadata_panel.append('p').text(line_string);
     });
-    console.log(`Metadata updated for sample: ${sample}`);
+    // console.log(`Metadata updated for sample: ${sample}`);
   });
 }
 
@@ -70,7 +70,7 @@ function buildCharts(sample) {
 
     // Render the Bubble Chart  
     Plotly.newPlot("bubble", bubble_data, bubble_layout);
-    console.log(`Bubble plot updated for sample: ${sample}`);
+    // console.log(`Bubble plot updated for sample: ${sample}`);
     // For the Bar Chart, map the otu_ids to a list of strings for your yticks
     // Build a Bar Chart
     // Don't forget to slice and reverse the input data appropriately
@@ -99,7 +99,7 @@ function buildCharts(sample) {
 
     // Render the Bar Chart
     Plotly.newPlot("bar", bar_data, bar_layout);
-    console.log(`Bar chart updated for sample: ${sample}`);
+    // console.log(`Bar chart updated for sample: ${sample}`);
   });
 };
 
@@ -122,7 +122,7 @@ function init() {
     // Get the first sample from the list
     let first_sample = dropdown.select('option').property("value");
     // Build charts and metadata panel with the first sample
-    console.log('init() ended. Moving on to first sample');
+    // console.log('init() ended. Moving on to first sample');
     optionChanged(first_sample);
   });
 };
@@ -138,4 +138,4 @@ function optionChanged(newSample) {
 // Initialize the dashboard
 init();
 
-d3.select('#selDataset').on('change', (event) => optionChanged(event.target.value));
+d3.select('#selDataset').on('change', event => optionChanged(event.target.value));
