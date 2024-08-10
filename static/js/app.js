@@ -80,17 +80,12 @@ function buildCharts(sample) {
       type: 'bar',
       orientation: 'h',
       x: sample_values,
-      y: otu_ids.map(id => `OTU ${id}`),
+      y: otu_ids.map(id => `OTU ${id}`).slice(0,10),
       text: otu_labels,
       transforms: [{
         type: 'sort',
         target: 'x',
         order: 'ascending'
-      }, {
-        type: 'filter',
-        target: 'x',
-        operation: '>',
-        value: 10
       }]
     }];
 
