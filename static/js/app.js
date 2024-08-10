@@ -144,4 +144,4 @@ function optionChanged(newSample) {
 // Initialize the dashboard
 init();
 
-d3.select('#selDataset').on('change', optionChanged(this));
+d3.select('#selDataset').on('change', (event) => optionChanged(event.target.value));
