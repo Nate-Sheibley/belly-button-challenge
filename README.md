@@ -4,7 +4,7 @@ Javascript dashboard of microorganisms found in belly button swab samples.
 Operational Taxonomic Units (OTUs) are an indication of how closely related microrganism species are.
 
 # Live Site
-https://nate-sheibley.github.io/belly-button-challenge/
+https://nate-sheibley.github.io/belly-button-dashboard/
 
 # Resources
 
