@@ -1,5 +1,7 @@
-# belly-button-challenge
-UCBerkeley-Ext data analytics bootcamp HW11
+# belly-button-dashboard
+Javascript dashboard of microorganisms found in belly button swab samples.
+
+Operational Taxonomic Units (OTUs) are an indication of how closely related microrganism species are.
 
 # Live Site
 https://nate-sheibley.github.io/belly-button-challenge/
@@ -13,3 +15,5 @@ Implement option creation | https://stackoverflow.com/questions/8674618/adding-o
 bar chart ordering | https://community.plotly.com/t/horizontal-bar-automatically-order-by-numerical-value/7183/2
 forEach() | Karen in class suggested learning it
 event handler this keyword bug causing errors | my webdev friend Lyle suggested (event) => optionChanged(event)) as the standard event handler method
+
+UCBerkeley-Ext data analytics bootcamp HW11
